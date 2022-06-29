@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "166037302810",
+    "project_id": "nlp-podcast",
+    "storage_bucket": "nlp-podcast.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:166037302810:android:81e14dff43856c429b2ba3",
+        "android_client_info": {
+          "package_name": "com.max.nlpcpodcast"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "166037302810-ma1isf58nk7umjkgfblic70jej8omc70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.max.nlpcpodcast",
+            "certificate_hash": "b16b337bbc98198f78d2d99eb65a18b028d500b5"
+          }
+        },
+        {
+          "client_id": "166037302810-ue5a42gm6fh5bjs4kl4qvtd4rsn3kpl2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxRDzHrDd0JFZvPq5edexn9fztxBzB2RQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "166037302810-ue5a42gm6fh5bjs4kl4qvtd4rsn3kpl2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

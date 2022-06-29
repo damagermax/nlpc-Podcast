@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/browseCategoryFragment"
+        android:title="Browse"
+        android:icon="@drawable/ic_browse"/>
+
+    <item
+        android:id="@+id/libraryFragment"
+        android:title="My library"
+        android:icon="@drawable/ic_library_music"/>
+
+    <item
+        android:id="@+id/searchFragment"
+        android:title="Search"
+        android:icon="@drawable/ic_search_24"/>
+
+</menu>

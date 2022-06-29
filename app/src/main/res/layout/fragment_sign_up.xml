@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".screen.SignUpFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/loginVector"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_sign_uo" />
+
+        <TextView
+            android:id="@+id/creatAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginVector"
+            android:fontFamily="@font/heebo_bold"
+            android:text="Creat an account"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+        <!-- email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/creatAccount"
+            android:layout_marginTop="30dp"
+            android:hint="Name"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpNameInput"
+                android:background="@color/white"
+                android:fontFamily="@font/heebo" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpNumberLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpNameLayout"
+            android:hint="Phone number"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpNumberInput"
+                android:background="@color/white"
+                android:fontFamily="@font/heebo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpNumberLayout"
+            android:hint="Email"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpEmailInput"
+                android:background="@color/white"
+                android:fontFamily="@font/heebo" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <!-- password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpEmailLayout"
+            android:hint="Password"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/signUpPasswordInput"
+                android:background="@color/white"
+                android:fontFamily="@font/heebo" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- login button -->
+        <Button
+            android:id="@id/signUpButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpPasswordLayout"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/heebo_medium"
+            android:padding="13dp"
+            android:text="SignUp"
+            android:textAllCaps="false" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpButton"
+            android:layout_marginTop="17dp">
+            <!-- don't have an account -->
+            <TextView
+                android:id="@+id/loginQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo"
+                android:text="Already have an account?"
+                android:textColor="@color/black_light" />
+
+            <!-- signUp cta -->
+            <TextView
+                android:id="@+id/loginCta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/loginQuestion"
+                android:fontFamily="@font/heebo_medium"
+                android:text="Log In"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

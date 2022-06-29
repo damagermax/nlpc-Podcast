@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">nlpc Podcast</string>
+    <string name="image">image</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_registered_email_address_to_recieve_password_reset_instructions">Enter your registered email address to  receive \n password reset instructions.</string>
+</resources>

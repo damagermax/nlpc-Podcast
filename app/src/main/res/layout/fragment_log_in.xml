@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screen.LogInFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/loginVector"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/image"
+            android:src="@drawable/ic_login" />
+
+        <TextView
+            android:id="@+id/logIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginVector"
+            android:fontFamily="@font/heebo_bold"
+            android:text="Welcome Back!"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+        <!-- email -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/logInEmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logIn"
+            android:layout_marginTop="30dp"
+            android:hint="Email"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/red">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/logInEmailInput"
+                android:fontFamily="@font/heebo"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/logInPasswordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logInEmailLayout"
+            android:hint="Password"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/black_light">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:id="@+id/logInPasswordInput"
+                android:fontFamily="@font/heebo"
+               />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- forgot password -->
+        <TextView
+            android:id="@+id/forgotPasswordCta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logInPasswordLayout"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/heebo_medium"
+            android:text="Forgot password?"
+            android:textColor="@color/black" />
+
+        <!-- login button -->
+        <Button
+            android:id="@id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/forgotPasswordCta"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/heebo_medium"
+            android:onClick="@{()->ha}"
+            android:padding="13dp"
+            android:text="Login"
+            android:textAllCaps="false" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginButton"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="30dp">
+            <!-- don't have an account -->
+            <TextView
+                android:id="@+id/loginQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/heebo"
+                android:text="Don't have an account?"
+                android:textColor="@color/black_light" />
+
+            <!-- signUp cta -->
+            <TextView
+                android:id="@+id/signUpCta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/loginQuestion"
+                android:fontFamily="@font/heebo_medium"
+                android:text="Sign Up"
+                android:textColor="@color/red" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

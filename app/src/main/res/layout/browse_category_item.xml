@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="158dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="168dp"
+        android:id="@+id/image_stack"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_width="158dp"
+            android:layout_height="140dp"
+            android:alpha=".9"
+            android:layout_centerVertical="true"
+            android:background="@color/black" />
+
+        <RelativeLayout
+            android:layout_width="154dp"
+            android:layout_height="145dp"
+            android:layout_centerVertical="true"
+            android:alpha=".7"
+            android:background="@color/black_light" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/browseCategoryItemImage"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/max" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Christin Living"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="2dp"
+        android:lines="1"
+        android:id="@+id/browseCategoryItemName"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:fontFamily="@font/heebo_medium"
+        android:layout_below="@id/image_stack"
+        />
+
+</RelativeLayout>

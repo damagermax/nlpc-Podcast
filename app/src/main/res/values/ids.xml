@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="loginButton" type="id" />
+    <item name="forgotPassword" type="id" />
+    <item name="sendButton" type="id" />
+    <item name="signUpButton" type="id" />
+    <item name="lsignUpPasswordLayout" type="id" />
+    <item name="signUpEmailLayout" type="id" />
+    <item name="profile" type="id" />
+    <item name="profile_number" type="id" />
+    <item name="waitingToSearchText" type="id" />
+
+</resources>
